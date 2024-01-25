@@ -1,0 +1,57 @@
+Project Requirements:
+    1. Document Editor
+        - Rich Text Editor
+        - Google Docs like interface
+        - Package: Quill
+    2. Resume Content Generation/Refinement
+        - Given a job description, the program needs to be able to extract key words from the description, and provide line by line suggestions.
+        - Example:
+                Jobby McJobface
+
+                help@sheetsresume.com ❖ (555) 555-5555 ❖ Denver, CO ❖ Portfolio / GitHub link
+
+                WORK EXPERIENCE 
+                (your most impressive thing needs to be first, period – i.e., no vague summaries)
+
+                Sheets & Giggles									Oct. 2017 – Present
+                Founder & CEO										Denver, CO
+                - S&G makes luxury plant-based mattresses, sheets, & pillows from Eucalyptus Lyocell ([SheetsGiggles.com](https://sheetsgiggles.com/)).
+                - As Founder & CEO, I oversee our core strategies, product roadmap, ops, marketing, and fundraising.
+                - Hundreds of thousands of units sold in the first 6 years of operation with a 4.8-star average rating.
+
+                Company Name									Month Year – Month Year
+                Job Title										City, ST (or just put Remote if remote)
+                - Core responsibility #1 / key results / high-level summary.
+                - Core responsibility #2. As your most recent past experience, you can build out a few bullet points here.
+                - Core responsibility #3. Don’t feel the need to write too much about jobs from over 5 years in the past.
+
+                Company Name									Month Year – Month Year
+                Current Job Title | Month, Year – Present		City, ST
+                - If you’ve been promoted / have held multiple titles at one company, put dates in italics next to each title like so.
+                - Core responsibility #2. As the jobs get older in your timeline, they’re less relevant and need fewer bullet points.
+
+                Prior Job Title | Month, Year – Month, Year
+                “Prior to my promotion to [current title], I…” core responsibility #1. Older job, less relevancy, 1 bullet is fine.
+
+                Company Name									Month Year – Month Year
+                Job Title										City, ST
+                - Core responsibility #1. For past jobs with zero relevance, save space by skipping any bullet points.
+
+                EDUCATION 
+                (for early-career candidates with less work experience, you can put this section first before WORK)
+
+                University Name 							Graduation Month, Year
+                Degree (e.g., BS), Majors (e.g., Computer Science)		City, ST
+                - List your honors like summa cum laude or Economics Honors Society; 3.X/4.0 GPA (list only if GPA is over 3.3)
+                - Any other fun stuff like varsity sports, fraternity/sorority, or something that gives you a little color
+
+                CERTIFICATIONS, SKILLS & INTERESTS 
+                (can put Skills / Certifications first if transitioning your career)
+
+                - Certifications: If you have relevant ones; otherwise, delete this bullet + delete “CERTIFICATIONS” above
+                - Skills (plug in your own): Strategic planning; recruiting; PnL modeling; inventory forecasting; brand identity maps; negotiations; Amazon marketing; DTC acquisition & retention marketing; copywriting; logistics; crowdfunding
+                - Interests (give them something to ask about in an interview): road trips; composting; yoga; Catan; fishing; Seinfeld
+        - Implementation Strat
+            - Rich Text Content is stored as HTMl -> OpenAI -> HTMl -> RichText Edits
+            - Goal: Figure out how to embedd suggesstions within rich text content. 
+
